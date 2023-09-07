@@ -1,0 +1,45 @@
+.acordion-wrap {
+  max-width: 500px;
+  width: 100%;
+  min-height: 100px;
+  background-color: aquamarine;
+  padding: 20px;
+}
+
+.step {
+  background-color: aqua;
+  border: 0.5px solid black;
+  margin: 0 auto;
+}
+.title {
+  width: 80%;
+  position: relative;
+  margin: 0 auto;
+}
+.text {
+  height: 0;
+  overflow: hidden;
+}
+.close {
+  display: none;
+}
+.title::before {
+  position: absolute;
+  right: 0px;
+  font-family: "Font Awesome 5 Free";
+  content: "\f078";
+  display: inline-block;
+  padding-right: 3px;
+  vertical-align: middle;
+  font-weight: 900;
+}
+
+.step.active .text {
+  height: 180px;
+}
+.step.active .title::before {
+  font-family: "Font Awesome 5 Free";
+  content: "\f053";
+  position: absolute;
+  right: 0px;
+}
