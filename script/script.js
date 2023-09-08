@@ -38,7 +38,7 @@ function getinformation() {
 
     document.getElementById("api-wraper").appendChild(p);
   });
-  requist.send();
+
   requist.send();
 }
 getinformation();
