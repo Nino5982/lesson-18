@@ -32,6 +32,13 @@ function getinformation() {
     });
     document.getElementById("api-wraper").appendChild(ul);
   });
+   requist.addEventListener("error", function () {
+    let p = document.createElement("p");
+    p.textContent = "Server Error";
+
+    document.getElementById("api-wraper").appendChild(p);
+  });
+  requist.send();
   requist.send();
 }
 getinformation();
